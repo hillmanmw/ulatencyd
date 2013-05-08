@@ -11,3 +11,19 @@ SRC_URI="TODO"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~x86"
+
+USE=""
+
+DEPEND="dev-lang/python"
+RDEPEND=""
+
+LICENSE=GPL-2"
+SLOT="0"
+
+src_unpack() {
+  unpack ${A}
+}
+
+src_install() {
+  cd ${A}
+  emake 
