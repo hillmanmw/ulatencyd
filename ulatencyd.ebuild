@@ -6,7 +6,9 @@ EAPI=5
 
 DESCRIPTION="Ulatency is a daemon that controls how the Linux kernel will spend it's resources on the running processes."
 HOMEPAGE="https://github.com/poelzi/ulatencyd"
-SRC_URI="TODO"
+SRC_URI="https://github.com/poelzi/ulatencyd/blob/master/client/ulatency"
+
+AUTHOR="hillmanmw"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -14,16 +16,20 @@ KEYWORDS="~x86"
 
 USE=""
 
-DEPEND="dev-lang/python"
+DEPEND=
+  "python-dbus
+  python 2.5
+  ulatencyd
+  python-qt4"
 RDEPEND=""
 
 LICENSE=GPL-2"
 SLOT="0"
 
-src_unpack() {
-  unpack ${A}
+src_prepare() {
+  unpack ${D}
 }
 
 src_install() {
-  cd ${A}
-  emake 
+  cd ${D}
+  emake DESTDIR="${D}" install
