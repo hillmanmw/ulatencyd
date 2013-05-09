@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://github.com/poelzi/ulatencyd/blob/master/client/ulatency">
+<pkgmetadata>
+  <maintainer>
+    <email>hillmanmw@gmail.com</email>
+    <name>Michael W Hillman II</name>
+  </maintainer>
+  <longdescription lang="en">
+    Ulatency is a daemon that controls how the Linux kernel will spend it's resources on the running processes.
+  </longdescription>
+</pkgmetadata>
